@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
         Attack();
     }
     [HeaderAttribute("¸I¼²§P©w")]
-    public GameObject DestoryFire;
+    public GameObject DestroyFire;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Mortal")
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
                 GameManager.AddMp(2);
             }
             Destroy(collision.gameObject);
-            var fire = Instantiate(DestoryFire, collision.transform.position, transform.rotation);
+            var fire = Instantiate(DestroyFire, collision.transform.position, transform.rotation);
             Destroy(fire, 0.5f);
         }
     }
