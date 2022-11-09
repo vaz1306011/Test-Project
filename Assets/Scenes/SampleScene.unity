@@ -152,8 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb83fcb7316baa43976a22fe6d5e6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 1546744993}
-  position: {x: 0, y: 1.5, z: -3.5}
   hp: {fileID: 470548364}
   mp: {fileID: 336952974}
   Enemy: {fileID: 5073498048400515500, guid: 7053e56958cec1448b29a88c28ac7f6b, type: 3}
@@ -533,6 +531,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -605,6 +604,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3493f79c9497ed4897b055810f04cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 1546744995}
+  offset: {x: 0, y: 3, z: -4.5}
 --- !u!1001 &1047186719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -738,6 +751,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 5
   DestoryFire: {fileID: 1947871717301538, guid: a990e3ac1318b834488c784d851f42a9, type: 3}
+--- !u!4 &1546744995 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8b786f3da7819374ca8a00602d2ae2cd, type: 3}
+  m_PrefabInstance: {fileID: 1188446007}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1546744996
 CapsuleCollider:
   m_ObjectHideFlags: 0

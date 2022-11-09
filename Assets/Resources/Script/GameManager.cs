@@ -5,25 +5,16 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    Camera cmr;
     void Start()
     {
         CreateEnemy();
-        cmr = Camera.main;
     }
 
     void Update()
     {
         UpdateUI();
-        CameraControl();
     }
-    [HeaderAttribute("¬Û¾÷")]
-    public GameObject obj;
-    public Vector3 position;
-    void CameraControl()
-    {
-        cmr.transform.position = obj.transform.position + position;
-    }
+
     [HeaderAttribute("UI")]
     public Text hp;
     public Text mp;
