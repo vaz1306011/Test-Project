@@ -70,6 +70,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.F))
         {
+            ani.SetBool("Walk", false);
             ani.SetBool("Attack", true);
         }
         else
